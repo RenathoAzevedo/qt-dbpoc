@@ -1,0 +1,14 @@
+#include "produto.h"
+#include <QApplication>
+#include <QStyleFactory>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    QApplication::setStyle(QStyleFactory::create("Fusion"));
+    Produto p;
+
+    p.show();
+
+    return a.exec();
+}
